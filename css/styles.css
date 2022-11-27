@@ -1,0 +1,262 @@
+/* secondary text color: #212121 */
+/* main text colour #757575; */
+/* white text color: #FFFFFF; */
+/* accent color: #2196F3 */
+/* footer for email and mobile color: rgba(255, 255, 255, 0.6);
+ /* main bgc #FFFFFF */
+/* footer bgc #2F303A; */
+
+:root {
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --main-bgc: #ffffff;
+  --secondary-text-color: #212121;
+  --secondary-bgc: #2f303a;
+  --third-bgc: #f5f4fa;
+  --footer-contact: rgba(255, 255, 255, 0.6);
+  --font-weight-bold: 700;
+  --font-size-main: 14px;
+}
+
+body {
+  background-color: var(--main-bgc);
+  color: var(--main-text-color);
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.logo-link {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: var(--font-weight-bold);
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo {
+  color: var(--accent-color);
+}
+
+.logo-back {
+  color: var(--secondary-text-color);
+}
+
+/* utility for deleteing points from "ul" */
+.list {
+  list-style: none;
+}
+
+.site-nav .link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--font-size-main);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* mob and email in header */
+.contact-link {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--font-size-main);
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: var(--secondary-bgc);
+}
+
+.hero-title {
+  color: var(--main-bgc);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(226, 198, 198, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+}
+
+.button-name {
+  color: var(--main-bgc);
+}
+
+/* utility for hiding elements */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.benefits {
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-main);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+}
+
+.task-title {
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--third-bgc);
+}
+.team-title {
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-member {
+  background-color: var(--main-bgc);
+}
+
+.team-member-name {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-member-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--secondary-bgc);
+}
+
+.logo-back-footer {
+  color: var(--main-bgc);
+}
+
+.address {
+  color: var(--main-bgc);
+  text-decoration: none;
+
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+
+/* mob and email in footer */
+
+.contact-footer {
+  color: var(--footer-contact);
+  text-decoration: none;
+
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+.filter-button {
+  background-color: var(--third-bgc);
+
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.filter-button-name {
+  color: var(--secondary-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+.filter-button-name:hover,
+.filter-button-name:focus {
+  color: var(--main-bgc);
+}
+
+.project-name {
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
